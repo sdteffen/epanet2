@@ -1,0 +1,17 @@
+Source: epanet2
+Section: misc 
+Priority: optional 
+Maintainer: "Steffen Macke" <sdteffen@sdteffen.de>
+Build-Depends: debhelper (>= 5), autotools-dev
+Standards-Version: 3.7.2
+
+Package: epanet2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: EPANET models water distribution piping systems
+ EPANET is an open source hydraulic analysis package for water supply networks.
+
+Package: epanet2-doc
+Architecture: all
+Description: Documentation for epanet2
+ EPANET is an open source hydraulic analysis package for water supply networks.

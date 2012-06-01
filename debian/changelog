@@ -1,0 +1,11 @@
+epanet2 (2.0.12-2) stable; urgency=low
+
+  * Second Debian Release, fixed DEB build
+
+ -- Steffen Macke <sdteffen@sdteffen.de>  Tue, 23 Feb 2010 10:50:38 +0100
+
+epanet2 (2.0.12-1) stable; urgency=low
+
+  * Initial Debian Release
+
+ -- Steffen Macke <sdteffen@sdteffen.de>  Tue, 22 Jul 2008 10:50:38 +0100
