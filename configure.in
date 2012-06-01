@@ -1,0 +1,17 @@
+AC_INIT([epanet],[2.0.12],[https://sourceforge.net/tracker/?group_id=5289&atid=105289])
+AC_CANONICAL_HOST
+AM_INIT_AUTOMAKE([-Wall -Werror foreign])
+AC_CONFIG_HEADERS([config.h])
+
+AC_LANG([C])
+AC_PROG_CC
+AC_USE_SYSTEM_EXTENSIONS
+LT_INIT
+AM_GNU_GETTEXT(external)
+AM_PROG_CC_C_O
+
+AC_HEADER_STDC
+AC_CHECK_LIB(m, pow)
+
+AC_CONFIG_FILES([Makefile src/Makefile po/Makefile.in])
+AC_OUTPUT

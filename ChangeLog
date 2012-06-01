@@ -1,0 +1,135 @@
+2010-02-23  Steffen Macke <sdteffen@sdteffen.de>
+
+	* debian.changelog:
+	* debian.control:
+	* debian.rules:
+	* epanet2.dsc: Fixed Debian/Ubuntu build
+
+2009-05-19  Steffen Macke <sdteffen@sdteffen.de>
+
+	* src/funcs.h:
+	* src/input2.c:
+	* src/toolkit.h: Reverting some changes (global variables problems)
+
+2009-05-18  Steffen Macke <sdteffen@sdteffen.de>
+
+	* src/epanet2.def:
+	* src/funcs.h:
+	* src/inpfile.c:
+	* src/input2.c:
+	* src/input3.c:
+	* src/rules.c:
+	* src/toolkit.h: Getting the DLL exports right for inp2shp
+	* src/epanet2dll.dsp:
+	* src/epanet2dll.dsw: MSVC project files to build epanet2.dll
+
+2009-03-19  Steffen Macke <sdteffen@sdteffen.de>
+
+	* src/epanet2.dev: Dev-C++ project to build epanet2.dll on Windows
+	* src/epanet.c:
+	* src/hydraul.c:
+	* src/input1.c:
+	* src/input2.c:
+	* src/Makefile.am:
+	* src/report.c:
+	* src/rules.c: Small changes to make things work with Dev-C++ and without
+	libintl
+	* src/epanet2exe.dev: Dev-C++ project to build epanet2.exe on Windows
+
+2008-09-12  Steffen Macke <sdteffen@sdteffen.de>
+
+	* configure.in: Added AC_CANONICAL_TARGET
+	* src/epanet.c: On Windows, use locale dir ..\locale relative to
+	exe
+
+2008-09-10  Steffen Macke <sdteffen@sdteffen.de>
+
+	* INSTALL: Special Windows compilation instructions
+
+2008-08-08  Steffen Macke <sdteffen@sdteffen.de>
+
+	* src/epanet2.h: Additional #defines for inp2shp
+
+2008-08-07  Steffen Macke <sdteffen@sdteffen.de>
+
+	* doc/en/en2manual.pdf: Added EPANET manual
+
+2008-07-24  Steffen Macke <sdteffen@sdteffen.de>
+
+	* configure.in: Removed intl subfolder
+	* src/report.c: Added some gettext calls
+	* po/de.po: Some more German translations
+
+2008-07-23  Steffen Macke <sdteffen@sdteffen.de>
+
+	* po/de.po: Some more German translations
+
+2008-07-22  Steffen Macke <sdteffen@sdteffen.de>
+
+	* po/de.po: Some more German translations
+	* debian.changelog:
+	* debian.control:
+	* debian.rules:
+	* epanet2.dsc: Starting with Ubuntu build in openSUSE farm
+	* epanet2.spec: Fist successful build in the openSUSE farm
+
+2008-07-21  Steffen Macke <sdteffen@sdteffen.de>
+
+	* po/de.po: Started work on the German translations
+	* epanet2.spec: Various updates
+	* po/Makefile.in:
+	* po/POTFILES:
+	* po/POTFILES.in:
+	* po/de.po:
+	* po/Makefile: Make "make dist" run again
+
+2008-07-20  Steffen Macke <sdteffen@sdteffen.de>
+
+	* src/i18n.h:
+	* src/Makefile.in:
+	* src/hydraul.c:
+	* src/report.c:
+	* src/epanet.c:
+	* src/input1.c:
+	* src/input2.c:
+	* src/Makefile.am:
+	* src/text.h:
+	* src/rules.c:
+	* po/POTFILES.in:
+	* po/de.po:
+	* po/epanet2.po: More work on the translations
+
+2008-07-19  Steffen Macke <sdteffen@sdteffen.de>
+
+	* Makefile.in:
+	* configure.in:
+	* src/Makefile.in:
+	* src/epanet.c:
+	* src/Makefile.am:
+	* src/text.h:
+	* po/Makevars:
+	* po/de.po:
+	* po/POTFILES.in:
+	* po/POTFILES:
+	* po/LINGUAS:
+	* po/Makefile: Working on gettext() support
+	* Makefile.am (SUBDIRS): Add po.
+	(ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): Add config.rpath, m4/ChangeLog.
+	* configure.in (AC_OUTPUT): Add po/Makefile.in.
+	* AUTHORS: Mentioning Lewis Rossman
+	* src/epanet.c:
+	* src/Makefile.am: Also build shared library
+
+2008-07-18  Steffen Macke <sdteffen@sdteffen.de>
+
+	* Makefile.am:
+	* Makefile.am:
+	* epanet2.spec: Trying to fix openSUSE build
+	* configure.in:
+	* src/epanet.c:
+	* src/Makefile.am:
+	* epanet2.kdevelop: First Automake-based build
+	* src/epanet.c:
+	* src/toolkit.h: ENgetpumptype(), ENgetheadcurve() added
+	* *.* The EPANET 2.00.12 release files from the EPA website

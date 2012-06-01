@@ -1,0 +1,1033 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/tracker/?"
+"group_id=5289&atid=105289\n"
+"POT-Creation-Date: 2010-07-20 17:51+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/text.h:289 src/i18n.h:46
+msgid "Node"
+msgstr ""
+
+#: src/text.h:290 src/i18n.h:47
+msgid "Link"
+msgstr ""
+
+#: src/text.h:291 src/i18n.h:48
+msgid "/day"
+msgstr ""
+
+#: src/text.h:336 src/i18n.h:93
+msgid ""
+"\n"
+"... EPANET Version 2.0\n"
+msgstr ""
+
+#: src/text.h:337 src/i18n.h:94
+msgid ""
+"\n"
+"  o Retrieving network data"
+msgstr ""
+
+#: src/text.h:338 src/i18n.h:95
+msgid ""
+"\n"
+" Correct syntax is:\n"
+" epanet <input file> <output file>\n"
+msgstr ""
+
+#: src/text.h:339 src/i18n.h:96
+msgid ""
+"\n"
+"    Cannot use duplicate file names."
+msgstr ""
+
+#: src/text.h:340 src/i18n.h:97
+msgid ""
+"\n"
+"    Cannot open input file "
+msgstr ""
+
+#: src/text.h:341 src/i18n.h:98
+msgid ""
+"\n"
+"    Cannot open report file "
+msgstr ""
+
+#: src/text.h:342 src/i18n.h:99
+msgid ""
+"\n"
+"    Cannot open output file "
+msgstr ""
+
+#: src/text.h:343 src/i18n.h:100
+msgid ""
+"\n"
+"    Cannot open temporary output file"
+msgstr ""
+
+#: src/text.h:344 src/i18n.h:101
+msgid ""
+"\n"
+"\n"
+"... EPANET completed.\n"
+msgstr ""
+
+#: src/text.h:345 src/i18n.h:102
+msgid ""
+"\n"
+"\n"
+"... EPANET completed. There are warnings.\n"
+msgstr ""
+
+#: src/text.h:346 src/i18n.h:103
+msgid ""
+"\n"
+"\n"
+"... EPANET completed. There are errors.\n"
+msgstr ""
+
+#: src/text.h:347 src/i18n.h:104
+msgid ""
+"\n"
+"  o Computing hydraulics at hour "
+msgstr ""
+
+#: src/text.h:348 src/i18n.h:105
+msgid ""
+"\n"
+"  o Computing water quality at hour "
+msgstr ""
+
+#: src/text.h:349 src/i18n.h:106
+msgid ""
+"\n"
+"  o Transferring results to file"
+msgstr ""
+
+#: src/text.h:350 src/i18n.h:107
+msgid ""
+"\n"
+"  o Writing output report to "
+msgstr ""
+
+#: src/text.h:351 src/i18n.h:108
+msgid "  Page 1                                    "
+msgstr ""
+
+#: src/text.h:352 src/i18n.h:109
+#, c-format
+msgid "    Input Data File ................... %s"
+msgstr ""
+
+#: src/text.h:353 src/i18n.h:110
+#, c-format
+msgid "    Number of Junctions................ %-d"
+msgstr ""
+
+#: src/text.h:354 src/i18n.h:111
+#, c-format
+msgid "    Number of Reservoirs............... %-d"
+msgstr ""
+
+#: src/text.h:355 src/i18n.h:112
+#, c-format
+msgid "    Number of Tanks ................... %-d"
+msgstr ""
+
+#: src/text.h:356 src/i18n.h:113
+#, c-format
+msgid "    Number of Pipes ................... %-d"
+msgstr ""
+
+#: src/text.h:357 src/i18n.h:114
+#, c-format
+msgid "    Number of Pumps ................... %-d"
+msgstr ""
+
+#: src/text.h:358 src/i18n.h:115
+#, c-format
+msgid "    Number of Valves .................. %-d"
+msgstr ""
+
+#: src/text.h:359 src/i18n.h:116
+#, c-format
+msgid "    Headloss Formula .................. %s"
+msgstr ""
+
+#: src/text.h:360 src/i18n.h:117
+#, c-format
+msgid "    Hydraulic Timestep ................ %-.2f %s"
+msgstr ""
+
+#: src/text.h:361 src/i18n.h:118
+#, c-format
+msgid "    Hydraulic Accuracy ................ %-.6f"
+msgstr ""
+
+#: src/text.h:363 src/i18n.h:120
+#, c-format
+msgid "    Status Check Frequency ............ %-d"
+msgstr ""
+
+#: src/text.h:364 src/i18n.h:121
+#, c-format
+msgid "    Maximum Trials Checked ............ %-d"
+msgstr ""
+
+#: src/text.h:365 src/i18n.h:122
+#, c-format
+msgid "    Damping Limit Threshold ........... %-.6f"
+msgstr ""
+
+#: src/text.h:367 src/i18n.h:124
+#, c-format
+msgid "    Maximum Trials .................... %-d"
+msgstr ""
+
+#: src/text.h:368 src/i18n.h:125
+msgid "    Quality Analysis .................. None"
+msgstr ""
+
+#: src/text.h:369 src/i18n.h:126
+#, c-format
+msgid "    Quality Analysis .................. %s"
+msgstr ""
+
+#: src/text.h:370 src/i18n.h:127
+#, c-format
+msgid "    Quality Analysis .................. Trace From Node %s"
+msgstr ""
+
+#: src/text.h:371 src/i18n.h:128
+msgid "    Quality Analysis .................. Age"
+msgstr ""
+
+#: src/text.h:372 src/i18n.h:129
+#, c-format
+msgid "    Water Quality Time Step ........... %-.2f min"
+msgstr ""
+
+#: src/text.h:373 src/i18n.h:130
+#, c-format
+msgid "    Water Quality Tolerance ........... %-.2f %s"
+msgstr ""
+
+#: src/text.h:374 src/i18n.h:131
+#, c-format
+msgid "    Specific Gravity .................. %-.2f"
+msgstr ""
+
+#: src/text.h:375 src/i18n.h:132
+#, c-format
+msgid "    Relative Kinematic Viscosity ...... %-.2f"
+msgstr ""
+
+#: src/text.h:376 src/i18n.h:133
+#, c-format
+msgid "    Relative Chemical Diffusivity ..... %-.2f"
+msgstr ""
+
+#: src/text.h:377 src/i18n.h:134
+#, c-format
+msgid "    Demand Multiplier ................. %-.2f"
+msgstr ""
+
+#: src/text.h:378 src/i18n.h:135
+#, c-format
+msgid "    Total Duration .................... %-.2f %s"
+msgstr ""
+
+#: src/text.h:379 src/i18n.h:136
+msgid "    Reporting Criteria:"
+msgstr ""
+
+#: src/text.h:380 src/i18n.h:137
+msgid "       No Nodes"
+msgstr ""
+
+#: src/text.h:381 src/i18n.h:138
+msgid "       All Nodes"
+msgstr ""
+
+#: src/text.h:382 src/i18n.h:139
+msgid "       Selected Nodes"
+msgstr ""
+
+#: src/text.h:383 src/i18n.h:140
+msgid "       No Links"
+msgstr ""
+
+#: src/text.h:384 src/i18n.h:141
+msgid "       All Links"
+msgstr ""
+
+#: src/text.h:385 src/i18n.h:142
+msgid "       Selected Links"
+msgstr ""
+
+#: src/text.h:386 src/i18n.h:143
+#, c-format
+msgid "       with %s below %-.2f %s"
+msgstr ""
+
+#: src/text.h:387
+#, c-format
+msgid "       with %s above %-.2f %s"
+msgstr ""
+
+#: src/text.h:390 src/i18n.h:147
+msgid "Hydraulic Status:"
+msgstr ""
+
+#: src/text.h:393 src/i18n.h:150
+#, c-format
+msgid "%10s: Tank %s is %s at %-.2f %s"
+msgstr ""
+
+#: src/text.h:394 src/i18n.h:151
+#, c-format
+msgid "%10s: Reservoir %s is %s"
+msgstr ""
+
+#: src/text.h:395 src/i18n.h:152
+#, c-format
+msgid "%10s: %s %s %s"
+msgstr ""
+
+#: src/text.h:396 src/i18n.h:153
+#, c-format
+msgid "%10s: %s %s changed from %s to %s"
+msgstr ""
+
+#: src/text.h:397 src/i18n.h:154
+#, c-format
+msgid "%10s: %s %s changed by %s %s control"
+msgstr ""
+
+#: src/text.h:398 src/i18n.h:155
+#, c-format
+msgid "%10s: %s %s changed by timer control"
+msgstr ""
+
+#: src/text.h:399 src/i18n.h:156
+#, c-format
+msgid "            %s %s setting changed to %-.2f"
+msgstr ""
+
+#: src/text.h:400 src/i18n.h:157
+#, c-format
+msgid "            %s %s switched from %s to %s"
+msgstr ""
+
+#: src/text.h:401 src/i18n.h:158
+#, c-format
+msgid "%10s: Balanced after %-d trials"
+msgstr ""
+
+#: src/text.h:402 src/i18n.h:159
+#, c-format
+msgid "%10s: Unbalanced after %-d trials (flow change = %-.6f)"
+msgstr ""
+
+#: src/text.h:404 src/i18n.h:161
+#, c-format
+msgid "            Max. flow imbalance is %.4f %s at Node %s"
+msgstr ""
+
+#: src/text.h:405 src/i18n.h:162
+#, c-format
+msgid "            Max. head imbalance is %.4f %s at Link %s"
+msgstr ""
+
+#: src/text.h:407 src/i18n.h:164
+#, c-format
+msgid "%10s: Valve %s caused ill-conditioning"
+msgstr ""
+
+#: src/text.h:408 src/i18n.h:165
+#, c-format
+msgid "%10s: System ill-conditioned at node %s"
+msgstr ""
+
+#: src/text.h:409 src/i18n.h:166
+#, c-format
+msgid "%10s: %s %s changed by rule %s"
+msgstr ""
+
+#: src/text.h:410 src/i18n.h:167
+#, c-format
+msgid "%10s: Balancing the network:"
+msgstr ""
+
+#: src/text.h:411 src/i18n.h:168
+#, c-format
+msgid "            Trial %2d: relative flow change = %-.6f"
+msgstr ""
+
+#: src/text.h:415 src/i18n.h:172
+msgid "Energy Usage:"
+msgstr ""
+
+#: src/text.h:417 src/i18n.h:174
+msgid "           Usage   Avg.     Kw-hr      Avg.      Peak      Cost"
+msgstr ""
+
+#: src/text.h:419 src/i18n.h:176
+#, c-format
+msgid "Pump      Factor Effic.     %s        Kw        Kw      /day"
+msgstr ""
+
+#: src/text.h:420 src/i18n.h:177
+#, c-format
+msgid "%38s Demand Charge: %9.2f"
+msgstr ""
+
+#: src/text.h:421 src/i18n.h:178
+#, c-format
+msgid "%38s Total Cost:    %9.2f"
+msgstr ""
+
+#: src/text.h:424 src/i18n.h:181
+#, c-format
+msgid "%s Node Results:"
+msgstr ""
+
+#: src/text.h:425 src/i18n.h:182
+msgid "Node Results:"
+msgstr ""
+
+#: src/text.h:426 src/i18n.h:183
+#, c-format
+msgid "Node Results at %s hrs:"
+msgstr ""
+
+#: src/text.h:429 src/i18n.h:186
+#, c-format
+msgid "%s Link Results:"
+msgstr ""
+
+#: src/text.h:430 src/i18n.h:187
+msgid "Link Results:"
+msgstr ""
+
+#: src/text.h:431 src/i18n.h:188
+#, c-format
+msgid "Link Results at %s hrs:"
+msgstr ""
+
+#: src/text.h:432 src/i18n.h:189
+#, c-format
+msgid ""
+"\n"
+"\f\n"
+"  Page %-d    %60.60s\n"
+msgstr ""
+
+#: src/text.h:435 src/i18n.h:192
+msgid "Retrieving network data..."
+msgstr ""
+
+#: src/text.h:436 src/i18n.h:193
+#, c-format
+msgid "Computing hydraulics at hour %s"
+msgstr ""
+
+#: src/text.h:437 src/i18n.h:194
+#, c-format
+msgid "Computing water quality at hour %s"
+msgstr ""
+
+#: src/text.h:438 src/i18n.h:195
+msgid "Saving results to file..."
+msgstr ""
+
+#: src/text.h:439 src/i18n.h:196
+#, c-format
+msgid "Analysis begun %s"
+msgstr ""
+
+#: src/text.h:440 src/i18n.h:197
+#, c-format
+msgid "Analysis ended %s"
+msgstr ""
+
+#: src/text.h:443 src/i18n.h:200
+msgid "System Error 101: insufficient memory available."
+msgstr ""
+
+#: src/text.h:444 src/i18n.h:201
+msgid "System Error 102: no network data available."
+msgstr ""
+
+#: src/text.h:445 src/i18n.h:202
+msgid "System Error 103: hydraulics not initialized."
+msgstr ""
+
+#: src/text.h:446 src/i18n.h:203
+msgid "System Error 104: no hydraulics for water quality analysis."
+msgstr ""
+
+#: src/text.h:447 src/i18n.h:204
+msgid "System Error 105: water quality not initialized."
+msgstr ""
+
+#: src/text.h:448 src/i18n.h:205
+msgid "System Error 106: no results saved to report on."
+msgstr ""
+
+#: src/text.h:449 src/i18n.h:206
+msgid "System Error 107: hydraulics supplied from external file."
+msgstr ""
+
+#: src/text.h:450 src/i18n.h:207
+msgid ""
+"System Error 108: cannot use external file while hydraulics solver is active."
+msgstr ""
+
+#: src/text.h:451 src/i18n.h:208
+msgid "System Error 109: cannot change time parameter when solver is active."
+msgstr ""
+
+#: src/text.h:452 src/i18n.h:209
+msgid "System Error 110: cannot solve network hydraulic equations."
+msgstr ""
+
+#: src/text.h:453 src/i18n.h:210
+msgid "System Error 120: cannot solve water quality transport equations."
+msgstr ""
+
+#: src/text.h:455 src/i18n.h:212
+msgid "Input Error 200: one or more errors in input file."
+msgstr ""
+
+#: src/text.h:457 src/i18n.h:214
+#, c-format
+msgid "Input Error 201: syntax error in following line of [%s] section:"
+msgstr ""
+
+#: src/text.h:458 src/i18n.h:215
+#, c-format
+msgid "Input Error 202: %s %s contains illegal numeric value."
+msgstr ""
+
+#: src/text.h:459 src/i18n.h:216
+#, c-format
+msgid "Input Error 203: %s %s refers to undefined node."
+msgstr ""
+
+#: src/text.h:460 src/i18n.h:217
+#, c-format
+msgid "Input Error 204: %s %s refers to undefined link."
+msgstr ""
+
+#: src/text.h:461 src/i18n.h:218
+#, c-format
+msgid "Input Error 205: %s %s refers to undefined time pattern."
+msgstr ""
+
+#: src/text.h:462 src/i18n.h:219
+#, c-format
+msgid "Input Error 206: %s %s refers to undefined curve."
+msgstr ""
+
+#: src/text.h:463 src/i18n.h:220
+#, c-format
+msgid "Input Error 207: %s %s attempts to control a CV."
+msgstr ""
+
+#: src/text.h:465 src/i18n.h:222
+#, c-format
+msgid "Input Error 208: %s specified for undefined Node %s."
+msgstr ""
+
+#: src/text.h:466 src/i18n.h:223
+#, c-format
+msgid "Input Error 209: illegal %s value for Node %s."
+msgstr ""
+
+#: src/text.h:467 src/i18n.h:224
+#, c-format
+msgid "Input Error 210: %s specified for undefined Link %s."
+msgstr ""
+
+#: src/text.h:468 src/i18n.h:225
+#, c-format
+msgid "Input Error 211: illegal %s value for Link %s."
+msgstr ""
+
+#: src/text.h:469 src/i18n.h:226
+#, c-format
+msgid "Input Error 212: trace node %.0s %s is undefined."
+msgstr ""
+
+#: src/text.h:470 src/i18n.h:227
+#, c-format
+msgid "Input Error 213: illegal option value in [%s] section:"
+msgstr ""
+
+#: src/text.h:472 src/i18n.h:229
+#, c-format
+msgid ""
+"Input Error 214: following line of [%s] section contains too many characters:"
+msgstr ""
+
+#: src/text.h:473 src/i18n.h:230
+#, c-format
+msgid "Input Error 215: %s %s is a duplicate ID."
+msgstr ""
+
+#: src/text.h:474 src/i18n.h:231
+#, c-format
+msgid "Input Error 216: %s data specified for undefined Pump %s."
+msgstr ""
+
+#: src/text.h:475 src/i18n.h:232
+#, c-format
+msgid "Input Error 217: invalid %s data for Pump %s."
+msgstr ""
+
+#: src/text.h:476 src/i18n.h:233
+#, c-format
+msgid "Input Error 219: %s %s illegally connected to a tank."
+msgstr ""
+
+#: src/text.h:477 src/i18n.h:234
+#, c-format
+msgid "Input Error 220: %s %s illegally connected to another valve."
+msgstr ""
+
+#: src/text.h:482 src/i18n.h:239
+msgid "Input Error 223: not enough nodes in network"
+msgstr ""
+
+#: src/text.h:483 src/i18n.h:240
+msgid "Input Error 224: no tanks or reservoirs in network."
+msgstr ""
+
+#: src/text.h:484 src/i18n.h:241
+#, c-format
+msgid "Input Error 225: invalid lower/upper levels for Tank %s."
+msgstr ""
+
+#: src/text.h:485 src/i18n.h:242
+#, c-format
+msgid "Input Error 226: no head curve supplied for Pump %s."
+msgstr ""
+
+#: src/text.h:486 src/i18n.h:243
+#, c-format
+msgid "Input Error 227: invalid head curve for Pump %s."
+msgstr ""
+
+#: src/text.h:487 src/i18n.h:244
+#, c-format
+msgid "Input Error 230: Curve %s has nonincreasing x-values."
+msgstr ""
+
+#: src/text.h:488 src/i18n.h:245
+#, c-format
+msgid "Input Error 233: Node %s is unconnected."
+msgstr ""
+
+#: src/text.h:489 src/i18n.h:246
+#, c-format
+msgid "Input Error 240: %s %s refers to undefined source."
+msgstr ""
+
+#: src/text.h:490 src/i18n.h:247
+#, c-format
+msgid "Input Error 241: %s %s refers to undefined control."
+msgstr ""
+
+#: src/text.h:491 src/i18n.h:248
+msgid "Input Error 250: function call contains invalid format."
+msgstr ""
+
+#: src/text.h:492 src/i18n.h:249
+msgid "Input Error 251: function call contains invalid parameter code."
+msgstr ""
+
+#: src/text.h:494 src/i18n.h:251
+msgid "File Error 301: identical file names."
+msgstr ""
+
+#: src/text.h:495 src/i18n.h:252
+msgid "File Error 302: cannot open input file."
+msgstr ""
+
+#: src/text.h:496 src/i18n.h:253
+msgid "File Error 303: cannot open report file."
+msgstr ""
+
+#: src/text.h:497 src/i18n.h:254
+msgid "File Error 304: cannot open binary output file."
+msgstr ""
+
+#: src/text.h:498 src/i18n.h:255
+msgid "File Error 305: cannot open hydraulics file."
+msgstr ""
+
+#: src/text.h:499 src/i18n.h:256
+msgid "File Error 306: hydraulics file does not match network data."
+msgstr ""
+
+#: src/text.h:500 src/i18n.h:257
+msgid "File Error 307: cannot read hydraulics file."
+msgstr ""
+
+#: src/text.h:501 src/i18n.h:258
+msgid "File Error 308: cannot save results to file."
+msgstr ""
+
+#: src/text.h:502 src/i18n.h:259
+msgid "File Error 309: cannot save results to report file."
+msgstr ""
+
+#: src/text.h:504 src/i18n.h:261
+msgid "Input Error 201: syntax error in following line of "
+msgstr ""
+
+#: src/text.h:505 src/i18n.h:262
+msgid "Input Error 202: illegal numeric value in following line of "
+msgstr ""
+
+#: src/text.h:506 src/i18n.h:263
+msgid "Input Error 203: undefined node in following line of "
+msgstr ""
+
+#: src/text.h:507 src/i18n.h:264
+msgid "Input Error 204: undefined link in following line of "
+msgstr ""
+
+#: src/text.h:508 src/i18n.h:265
+msgid "Input Error 207: attempt to control a CV in following line of "
+msgstr ""
+
+#: src/text.h:510 src/i18n.h:267
+msgid "Input Error 221: mis-placed clause in following line of "
+msgstr ""
+
+#: src/text.h:513 src/i18n.h:270
+#, c-format
+msgid "WARNING: System unbalanced at %s hrs."
+msgstr ""
+
+#: src/text.h:515 src/i18n.h:272
+#, c-format
+msgid "WARNING: Maximum trials exceeded at %s hrs. System may be unstable."
+msgstr ""
+
+#: src/text.h:516 src/i18n.h:273
+#, c-format
+msgid "WARNING: Node %s disconnected at %s hrs"
+msgstr ""
+
+#: src/text.h:517 src/i18n.h:274
+#, c-format
+msgid "WARNING: %d additional nodes disconnected at %s hrs"
+msgstr ""
+
+#: src/text.h:518 src/i18n.h:275
+#, c-format
+msgid "WARNING: System disconnected because of Link %s"
+msgstr ""
+
+#: src/text.h:519 src/i18n.h:276
+#, c-format
+msgid "WARNING: Pump %s %s at %s hrs."
+msgstr ""
+
+#: src/text.h:520 src/i18n.h:277
+#, c-format
+msgid "WARNING: %s %s %s at %s hrs."
+msgstr ""
+
+#: src/text.h:521 src/i18n.h:278
+#, c-format
+msgid "WARNING: Negative pressures at %s hrs."
+msgstr ""
+
+#: src/text.h:524 src/i18n.h:281
+msgid "WARNING: System hydraulically unbalanced."
+msgstr ""
+
+#: src/text.h:525 src/i18n.h:282
+msgid "WARNING: System may be hydraulically unstable."
+msgstr ""
+
+#: src/text.h:526 src/i18n.h:283
+msgid "WARNING: System disconnected."
+msgstr ""
+
+#: src/text.h:527 src/i18n.h:284
+msgid "WARNING: Pumps cannot deliver enough flow or head."
+msgstr ""
+
+#: src/text.h:528 src/i18n.h:285
+msgid "WARNING: Valves cannot deliver enough flow."
+msgstr ""
+
+#: src/text.h:529 src/i18n.h:286
+msgid "WARNING: System has negative pressures."
+msgstr ""
+
+#: src/i18n.h:13
+msgid "above"
+msgstr ""
+
+#: src/i18n.h:14
+msgid "below"
+msgstr ""
+
+#: src/i18n.h:15
+msgid "Hazen-Williams"
+msgstr ""
+
+#: src/i18n.h:16
+msgid "Darcy-Weisbach"
+msgstr ""
+
+#: src/i18n.h:17
+msgid "Chezy-Manning"
+msgstr ""
+
+#: src/i18n.h:18
+msgid "Chemical"
+msgstr ""
+
+#: src/i18n.h:19
+msgid "closed because cannot deliver head"
+msgstr ""
+
+#: src/i18n.h:20
+msgid "temporarily closed"
+msgstr ""
+
+#: src/i18n.h:21
+msgid "closed"
+msgstr ""
+
+#: src/i18n.h:22
+msgid "open"
+msgstr ""
+
+#: src/i18n.h:23
+msgid "active"
+msgstr ""
+
+#: src/i18n.h:24
+msgid "open but exceeds maximum flow"
+msgstr ""
+
+#: src/i18n.h:25
+msgid "open but cannot deliver flow"
+msgstr ""
+
+#: src/i18n.h:26
+msgid "open but cannot deliver pressure"
+msgstr ""
+
+#: src/i18n.h:27
+msgid "filling"
+msgstr ""
+
+#: src/i18n.h:28
+msgid "emptying"
+msgstr ""
+
+#: src/i18n.h:30
+msgid "Elevation"
+msgstr ""
+
+#: src/i18n.h:31
+msgid "Demand"
+msgstr ""
+
+#: src/i18n.h:32
+msgid "Head"
+msgstr ""
+
+#: src/i18n.h:33
+msgid "Pressure"
+msgstr ""
+
+#: src/i18n.h:34 src/i18n.h:40
+msgid "Quality"
+msgstr ""
+
+#: src/i18n.h:35
+msgid "Length"
+msgstr ""
+
+#: src/i18n.h:36
+msgid "Diameter"
+msgstr ""
+
+#: src/i18n.h:37
+msgid "Flow"
+msgstr ""
+
+#: src/i18n.h:38
+msgid "Velocity"
+msgstr ""
+
+#: src/i18n.h:39
+msgid "Headloss"
+msgstr ""
+
+#: src/i18n.h:41
+msgid "State"
+msgstr ""
+
+#: src/i18n.h:42
+msgid "Setting"
+msgstr ""
+
+#: src/i18n.h:43 src/i18n.h:66
+msgid "Reaction"
+msgstr ""
+
+#: src/i18n.h:44
+msgid "F-Factor"
+msgstr ""
+
+#: src/i18n.h:50
+msgid "Junction"
+msgstr ""
+
+#: src/i18n.h:51
+msgid "Reservoir"
+msgstr ""
+
+#: src/i18n.h:52
+msgid "Tank"
+msgstr ""
+
+#: src/i18n.h:53
+msgid "Pipe"
+msgstr ""
+
+#: src/i18n.h:54
+msgid "Pump"
+msgstr ""
+
+#: src/i18n.h:55
+msgid "Valve"
+msgstr ""
+
+#: src/i18n.h:56
+msgid "Control"
+msgstr ""
+
+#: src/i18n.h:57
+msgid "Rule"
+msgstr ""
+
+#: src/i18n.h:58
+msgid "Demand for Node"
+msgstr ""
+
+#: src/i18n.h:59
+msgid "Source"
+msgstr ""
+
+#: src/i18n.h:60
+msgid "Emitter"
+msgstr ""
+
+#: src/i18n.h:61
+msgid "Pattern"
+msgstr ""
+
+#: src/i18n.h:62
+msgid "Curve"
+msgstr ""
+
+#: src/i18n.h:63
+msgid "Status"
+msgstr ""
+
+#: src/i18n.h:64
+msgid "Roughness"
+msgstr ""
+
+#: src/i18n.h:65
+msgid "Energy"
+msgstr ""
+
+#: src/i18n.h:67
+msgid "Mixing"
+msgstr ""
+
+#: src/i18n.h:68
+msgid "Report"
+msgstr ""
+
+#: src/i18n.h:69
+msgid "Times"
+msgstr ""
+
+#: src/i18n.h:70
+msgid "Options"
+msgstr ""
+
+#: src/i18n.h:71
+msgid "[RULES] section"
+msgstr ""
+
+#: src/i18n.h:72
+msgid " EXECUTION HALTED."
+msgstr ""
+
+#: src/i18n.h:73
+msgid "function call"
+msgstr ""
+
+#: src/i18n.h:74
+msgid " (continued)"
+msgstr ""
+
+#: src/i18n.h:75
+msgid "  /m3"
+msgstr ""
+
+#: src/i18n.h:76
+msgid "/Mgal"
+msgstr ""
+
+#: src/i18n.h:77
+msgid "DIFFERENTIAL"
+msgstr ""
+
+#: src/i18n.h:82 src/i18n.h:92
+msgid "******************************************************************"
+msgstr ""
+
+#: src/i18n.h:84
+msgid "*                           E P A N E T                          *"
+msgstr ""
+
+#: src/i18n.h:86
+msgid "*                   Hydraulic and Water Quality                  *"
+msgstr ""
+
+#: src/i18n.h:88
+msgid "*                   Analysis for Pipe Networks                   *"
+msgstr ""
+
+#: src/i18n.h:90
+msgid "*                         Version 2.00.12                        *"
+msgstr ""
