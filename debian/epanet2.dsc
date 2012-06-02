@@ -2,7 +2,7 @@ Format: 1.0
 Source: epanet2
 Binary: epanet2, epanet2-doc
 Architecture: any
-Version: 2.0.12-2
+Version: 2.0.12.1-1
 Maintainer: Steffen Macke <sdteffen@sdteffen.de>
 Standards-Version: 3.7.2
 Build-Depends: autotools-dev, debhelper (>=5)

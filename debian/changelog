@@ -1,3 +1,9 @@
+epanet2 (2.0.12.1-1) stable; urgency=low
+
+  * Fixed toolkit.h installation
+
+ -- Steffen Macke <sdteffen@sdteffen.de> Sat, 02 Jun 2012 08:30:00 +0100
+
 epanet2 (2.0.12-2) stable; urgency=low
 
   * Second Debian Release, fixed DEB build
