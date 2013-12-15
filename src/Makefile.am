@@ -17,4 +17,4 @@ libepanet2_la_SOURCES = epanet.c hash.c hydraul.c inpfile.c input1.c input2.c in
 include_HEADERS = toolkit.h
 libepanet2_la_DEFS = -DSOL @DEFS@
 
-EXTRA_DIST = Makefile.in
+EXTRA_DIST = Makefile.in epanet2.def
