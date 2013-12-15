@@ -2,7 +2,7 @@
 # have all needed files, that a GNU package needs
 AUTOMAKE_OPTIONS = foreign 1.4
 
-SUBDIRS = debian po src
+SUBDIRS = debian src
 
 EXTRA_DIST = config.rpath m4/ChangeLog  Makefile.in
 

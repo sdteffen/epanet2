@@ -17,17 +17,19 @@ AUTHOR:     L. Rossman
 
 // --- Define DLLEXPORT
 
-#if defined(_MSC_VER)
-#include <windows.h>
 #ifdef DLL
-#define DLLEXPORT extern __declspec(dllexport)
+  #ifdef __cplusplus
+  #define DLLEXPORT extern "C" __declspec(dllexport) __stdcall
+  #else
+  #define DLLEXPORT __declspec(dllexport) __stdcall
+  #endif
 #else
-#define DLLEXPORT extern __declspec(dllimport)
+  #ifdef __cplusplus
+  #define DLLEXPORT extern "C"
+  #else
+  #define DLLEXPORT
+  #endif
 #endif
-#else 
-#define DLLEXPORT
-#endif 
-
 
 // --- Define the EPANET toolkit constants
 
@@ -151,11 +153,6 @@ AUTHOR:     L. Rossman
 
 #define EN_INITFLOW    10   /* Re-initialize flows flag  */
 
-/*** Updated 11/24/06 ***/
-#define EN_CONST_HP     0   /*    constant horsepower              */
-#define EN_POWER_FUNC   1   /*    power function                   */
-#define EN_CUSTOM       2   /*    user-defined custom curve        */
-
 
 // --- Declare the EPANET toolkit functions
 
@@ -224,8 +221,4 @@ AUTHOR:     L. Rossman
  int  DLLEXPORT ENsetoption(int, float);
  int  DLLEXPORT ENsetstatusreport(int);
  int  DLLEXPORT ENsetqualtype(int, char *, char *, char *);
-
-/*** Updated 11/24/06 ***/
- int DLLEXPORT ENgetheadcurve(int, char *);
- int DLLEXPORT ENgetpumptype(int, int *);
 

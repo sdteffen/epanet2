@@ -30,17 +30,6 @@ formatted string S to the report file.
 #include <malloc.h>
 #include <math.h>
 #include <time.h>
-#ifdef ENABLE_NLS
-#include <libintl.h>
-#else
-#define _(string) string
-#endif
-#include <locale.h>
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#else
-#define CLE 1
-#endif
 #include "hash.h"
 #include "text.h"
 #include "types.h"
@@ -163,7 +152,7 @@ void  writelogo()
    LineNum = 2;
    fprintf(RptFile,FMT18);
    fprintf(RptFile,"%s",DateStamp);
-   for (i=0; LogoTxt[i] != NULL; i++) writeline(_(LogoTxt[i]));
+   for (i=0; LogoTxt[i] != NULL; i++) writeline(LogoTxt[i]);
    writeline("");
 }                        /* End of writelogo */
 
@@ -310,9 +299,9 @@ void  writehydstat(int iter, double relerr)
       if (newstat != OldStat[Nlinks+i])
       {
          if (Tank[i].A > 0.0)
-            sprintf(s1,FMT50,atime,Node[n].ID,_(StatTxt[newstat]),
+            sprintf(s1,FMT50,atime,Node[n].ID,StatTxt[newstat],
                (H[n]-Node[n].El)*Ucf[HEAD],Field[HEAD].Units);
-         else sprintf(s1,FMT51,atime,Node[n].ID,_(StatTxt[newstat]));
+         else sprintf(s1,FMT51,atime,Node[n].ID,StatTxt[newstat]);
          writeline(s1);
          OldStat[Nlinks+i] = newstat;
       }
@@ -325,9 +314,9 @@ void  writehydstat(int iter, double relerr)
       {
          if (Htime == 0)
             sprintf(s1,FMT52,atime,LinkTxt[Link[i].Type],Link[i].ID,
-               _(StatTxt[S[i]]));
+               StatTxt[S[i]]);
          else sprintf(s1,FMT53,atime,LinkTxt[Link[i].Type],Link[i].ID,
-            _(StatTxt[OldStat[i]]),_(StatTxt[S[i]]));
+            StatTxt[OldStat[i]],StatTxt[S[i]]);
          writeline(s1);
          OldStat[i] = S[i];
       }
@@ -559,7 +548,7 @@ void  writelinktable(Pfloat *x)
                   if      (y[j] <= CLOSED) k = CLOSED;
                   else if (y[j] == ACTIVE) k = ACTIVE;
                   else                     k = OPEN;
-                  sprintf(s1, "%10s", _(StatTxt[k]));
+                  sprintf(s1, "%10s", StatTxt[k]);
                }
 
 /*** Updated 6/24/02 ***/
@@ -641,7 +630,7 @@ void  writeheader(int type, int contin)
    if (type == NODEHDR)
    {
       if      (Tstatflag == RANGE)  sprintf(s,FMT76,t_DIFFER);
-      else if (Tstatflag != SERIES) sprintf(s,FMT76,_(TstatTxt[Tstatflag]));
+      else if (Tstatflag != SERIES) sprintf(s,FMT76,TstatTxt[Tstatflag]);
       else if (Dur == 0)            sprintf(s,FMT77);
       else                          sprintf(s,FMT78,clocktime(Atime,Htime));
       if (contin) strcat(s,t_CONTINUED);
@@ -677,7 +666,7 @@ void  writeheader(int type, int contin)
    if (type == LINKHDR)
    {
       if      (Tstatflag == RANGE)  sprintf(s,FMT79,t_DIFFER);
-      else if (Tstatflag != SERIES) sprintf(s,FMT79,_(TstatTxt[Tstatflag]));
+      else if (Tstatflag != SERIES) sprintf(s,FMT79,TstatTxt[Tstatflag]);
       else if (Dur == 0)            sprintf(s,FMT80);
       else                          sprintf(s,FMT81,clocktime(Atime,Htime));
       if (contin) strcat(s,t_CONTINUED);
@@ -794,7 +783,7 @@ void  writestatchange(int k, char s1, char s2)
    if (j1 != j2)
    {
       sprintf(Msg,FMT57,LinkTxt[Link[k].Type],Link[k].ID,
-              _(StatTxt[j1]),_(StatTxt[j2]));
+              StatTxt[j1],StatTxt[j2]);
       writeline(Msg);
    }
 }                        /* End of writestatchange */
@@ -894,7 +883,7 @@ int  writehydwarn(int iter, double relerr)
       if (S[j] >= XFCV)
       {
          sprintf(Msg,WARN05,LinkTxt[Link[j].Type],Link[j].ID,
-            _(StatTxt[S[j]]),clocktime(Atime,Htime));
+            StatTxt[S[j]],clocktime(Atime,Htime));
          if (Messageflag) writeline(Msg);
          flag = 5;
       }
@@ -912,7 +901,7 @@ int  writehydwarn(int iter, double relerr)
       }                                                                        //(2.00.11 - LR)
       if (s == XHEAD || s == XFLOW)                                            //(2.00.11 - LR)
       {                                    
-         sprintf(Msg,WARN04,Link[j].ID,_(StatTxt[s]),                             //(2.00.11 - LR)
+         sprintf(Msg,WARN04,Link[j].ID,StatTxt[s],                             //(2.00.11 - LR)
                  clocktime(Atime,Htime));
          if (Messageflag) writeline(Msg);
          flag = 4;

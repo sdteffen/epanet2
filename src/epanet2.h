@@ -130,11 +130,6 @@
 #define EN_SAVE         1
 #define EN_INITFLOW     10  /* Re-initialize flow flag   */
 
-/*** Updated 11/24/06 for inp2shp ***/
-#define EN_CONST_HP     0   /*    constant horsepower              */
-#define EN_POWER_FUNC   1   /*    power function                   */
-#define EN_CUSTOM       2   /*    user-defined custom curve        */
-#define EN_NOCURVE      3
 
 
 // --- define WINDOWS

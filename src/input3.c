@@ -29,7 +29,6 @@ All functions in this module are called from newline() in INPUT2.C.
 #include "text.h"
 #include "types.h"
 #include "funcs.h"
-#include "toolkit.h"
 #define  EXTERN  extern
 #include "vars.h"
 

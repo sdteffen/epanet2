@@ -25,22 +25,10 @@ AUTHOR:     L. Rossman
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
-#ifdef ENABLE_NLS
-#include <libintl.h>
-#else
-#define _(string) string
-#endif
-#include <locale.h>
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#else
-#define CLE 1
-#endif
 #include "hash.h"
 #include "text.h"
 #include "types.h"
 #include "funcs.h"
-#include "toolkit.h"
 #define  EXTERN  extern
 #include "vars.h"
 

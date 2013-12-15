@@ -110,7 +110,7 @@ execute function x and set the error code equal to its return value.
 /*** New compile directives ***/                                               //(2.00.11 - LR)
 //#define CLE     /* Compile as a command line executable */
 //#define SOL     /* Compile as a shared object library */
-//#define DLL       /* Compile as a Windows DLL */
+#define DLL       /* Compile as a Windows DLL */
 
 /*** Following lines are deprecated ***/                                       //(2.00.11 - LR)
 //#ifdef DLL
@@ -134,11 +134,7 @@ execute function x and set the error code equal to its return value.
 #include <string.h>
 #include <malloc.h>
 #include <math.h>
-#include <float.h>
-#include <libintl.h>
-#include <locale.h>
-#include <config.h>
-#define _(string) gettext (string)
+#include <float.h>                                                             //(2.00.12 - LR)
 #include "hash.h"    
 #include "text.h"
 #include "types.h"
@@ -194,32 +190,6 @@ int   main(int argc, char *argv[])
     char *f1,*f2,*f3;
     char blank[] = "";
     int  errcode;
-#ifdef WIN32
-    char localedir[MAX_PATH] = LOCALEDIR;
-#else
-#define localedir LOCALEDIR
-#endif
-    /* gettext support */
-    setlocale(LC_MESSAGES, "");
-#ifdef WIN32
-	strcpy(localedir, argv[0]);
-	char *exe_folder = strrchr(localedir, '\\');
-        if(exe_folder)
-         {
-    		if(exe_folder)
-    		{
-        		*exe_folder = 0;
-		exe_folder = strrchr(localedir, '\\');
-		++exe_folder;
-		*exe_folder = 0;
-		
-			sprintf(exe_folder, "locale");
-			bindtextdomain(PACKAGE, localedir);
-    		}
-	}
-#endif
-    bindtextdomain(PACKAGE, localedir);
-    textdomain(PACKAGE);
 
 /* Check for proper number of command line arguments */
     if (argc < 3) writecon(FMT03);
@@ -2445,57 +2415,6 @@ int  DLLEXPORT ENsetqualtype(int qualcode, char *chemname,
    Ucf[REACTRATE] = ccf;
 
    return(0);
-}
-
-/*** Updated 11/24/06 ***/
-int DLLEXPORT ENgetheadcurve(int index, char *id)
-/*----------------------------------------------------------------
-**  Input:   index = index of pump in list of links
-**  Output:  id = head curve ID
-**  Returns: error code                              
-**  Purpose: retrieves ID of a head curve for specific link index
-**
-**  NOTE: 'id' must be able to hold MAXID characters
-**----------------------------------------------------------------
-*/
-{
-   int i;
-   strcpy(id,"");
-   if (!Openflag) return(102);
-   for (i=1; i<=Npumps; i++)
-   {
-      if(Pump[i].Link = index) 
-      {
-         strcpy(id,Curve[Pump[i].Hcurve].ID);                   
-         return(0);
-      }
-   }
-   return(204);
-}
-
-/*** Updated 11/24/06 ***/
-int DLLEXPORT ENgetpumptype(int index, int *type)
-/*----------------------------------------------------------------
-**  Input:   index = index of pump in list of links
-**  Output:  type = PumpType
-**  Returns: error code                              
-**  Purpose: retrieves type of a pump for specific link index
-**
-**----------------------------------------------------------------
-*/
-{
-   int i;
-   *type=-1;
-   if (!Openflag) return(102);
-   for (i=1; i<=Npumps; i++)
-   {
-      if(Pump[i].Link = index) 
-      {
-         *type = Pump[i].Ptype;                   
-         return(0);
-      }
-   }
-   return(204);
 }
 
 
