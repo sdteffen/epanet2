@@ -26,12 +26,16 @@ Url: http://epanet.de
 BuildRequires: glibc-devel
 
 %description
-EPANETL models water distribution piping systems (hydraulic analysis).
-Localized version of the popular EPANET hydraulic modelling package.
+EPANET models water distribution piping systems (hydraulic analysis).
+The popular EPANET hydraulic modelling package.
 
 %package -n epanet-devel
 Summary: EPANET Toolkit
 Group: Development/Libraries/C and C++
+
+%description -n epanet-devel
+EPANET models water distribution piping systems (hydraulic analysis).
+The popular EPANET hydraulic modelling package.
 
 %prep
 %setup
@@ -54,6 +58,9 @@ rm -rf %{buildroot}
 
 %files -n epanet-devel
 %defattr(-, root, root)
+%_includedir/toolkit.h
+%_libdir/libepanet2.a
+%_libdir/libepanet2.la
 %_libdir/libepanet2.so
 %_libdir/libepanet2.so.0
 %_libdir/libepanet2.so.0.0.0
