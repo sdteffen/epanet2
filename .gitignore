@@ -23,6 +23,11 @@ stamp-h1
 config.log
 config.status
 src/*.lib
+src/.libs
+src/epanet2
+src/libepanet2.la
+src/*.o
+src/*.lo
 *.xz
 libtool
 
