@@ -31,4 +31,5 @@ src/*.lo
 src/*.exe
 *.xz
 libtool
-
+.DS_STORE
+**/.DS_STORE
