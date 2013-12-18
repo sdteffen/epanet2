@@ -9,6 +9,6 @@
 #ifndef epanet2d_malloc_h
 #define epanet2d_malloc_h
 
-
+#include <malloc/malloc.h>
 
 #endif
