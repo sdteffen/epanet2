@@ -73,6 +73,8 @@ AUTHOR:     L. Rossman
 #define EN_STATUS       11
 #define EN_SETTING      12
 #define EN_ENERGY       13
+#define EN_LINKQUAL     14     /* TNT */
+#define EN_LINKPATTERN  15
 
 #define EN_DURATION     0    /* Time parameters */
 #define EN_HYDSTEP      1
