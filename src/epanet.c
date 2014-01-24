@@ -2432,7 +2432,7 @@ int DLLEXPORT ENgetheadcurve(int index, char *id)
 {
    strcpy(id,"");
    if (!Openflag) return(102);
-   if (index <= 0 || index > Nlinks) return(204);
+   if (index < 1 || index > Nlinks || PUMP != Link[index].Type) return(204);
    strcpy(id,Curve[Pump[PUMPINDEX(index)].Hcurve].ID);
    return(0);
 }
@@ -2449,7 +2449,7 @@ int DLLEXPORT ENgetpumptype(int index, int *type)
 {
    *type=-1;
    if (!Openflag) return(102);
-   if (index <= 0 || index > Nlinks) return(204);
+   if (index < 1 || index > Nlinks || PUMP != Link[index].Type) return(204);
    *type = Pump[PUMPINDEX(index)].Ptype;
    return(0);
 }
