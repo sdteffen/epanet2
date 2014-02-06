@@ -1,0 +1,22 @@
+  Page 1                                    Wed Feb 05 17:42:58 2014
+
+  ******************************************************************
+  *                           E P A N E T                          *
+  *                   Hydraulic and Water Quality                  *
+  *                   Analysis for Pipe Networks                   *
+  *                         Version 2.00.12                        *
+  ******************************************************************
+  
+  Input Error 201: syntax error in following line of [(null)] section:
+  ﻿[TITLE]
+
+  Input Error 201: syntax error in following line of [(null)] section:
+   EPANET Example Network 1
+
+  Input Error 201: syntax error in following line of [(null)] section:
+  A simple example of modeling chlorine decay. Both bulk and
+
+  Input Error 201: syntax error in following line of [(null)] section:
+  wall reactions are included. 
+
+  Input Error 200: one or more errors in input file.
