@@ -1,0 +1,17 @@
+/**
+ * main.c EPANET Toolkit Template
+ * http://epanet.de/developer/
+ */
+
+#include <epanet2.h>
+#include <stdio.h>
+
+int main(int argc, char* argv[])
+{
+	int version;
+	
+	ENgetversion(&version);
+	printf("EPANET Toolkit version %d\n", version);
+	
+	return 0;
+}

@@ -1,0 +1,24 @@
+[Template]
+ver=1
+Name=EPANET
+Icon=EPANET.ico
+Description=C project using the EPANET Toolkit.
+Category=Console
+[Unit0]
+CppName=main.c
+Cpp=EPANET_main.c.txt
+[Unit1]
+CppName=epanet2.dll
+Cpp=EPANET_epanet2.dll.txt
+[Project]
+UnitCount=2
+Type=1
+IsCpp=0
+Compiler=
+CppCompiler=
+Linker=-lepanet2_@@__@@_
+CompilerSettings=0000000100000000001000000
+CompilerSet=3
+IncludeVersionInfo=0
+SupportXPThemes=0
+Icon=EPANET.project.ico
