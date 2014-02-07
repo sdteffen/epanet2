@@ -1,0 +1,16 @@
+[Setup]
+Version=2
+AppName=EPANET
+AppVerName=EPANET version 2.0.12
+AppVersion=2.0.12
+MenuName=EPANET
+Description=EPANET is a public domain hydraulic analysis package for water supply networks. Learn more on www.epanet.de
+Url=http://www.epanet.de/developer/
+
+[Files]
+epanet2.dll=<app>\MinGW64\bin\epanet2.dll
+epanet2.h=<app>\MinGW64\x86_64-w64-mingw32\include\epanet2.h
+epanet2.lib=<app>\MinGW64\x86_64-w64-mingw32\lib32\epanet2.lib
+
+[Icons]
+Website=http://www.epanet.de/developer/
